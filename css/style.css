@@ -7,6 +7,12 @@
     font-style: normal;
 }
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -16,15 +22,11 @@ body {
 
 section {
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    margin: 0 auto;
 }
 
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .arrow-intro {
@@ -37,10 +39,13 @@ img {
     font-family: 'Ostrich Sans';
 }
 
+.grendel-info {
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+
 .center {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .sub-title {
@@ -48,10 +53,8 @@ img {
 }
 
 .container {
-    width: 1052px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    max-width: 1052px;
+    margin: 0 auto;
 }
 
 #intro {
