@@ -16,8 +16,6 @@ body {
 
 section {
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
     display: block;
 }
 
@@ -28,7 +26,7 @@ img {
 }
 
 .arrow-intro {
-    background: url(../img/arrows.png) no-repeat center;
+    background: url('../img/arrows.png') no-repeat center;
     font-family: 'Ostrich Sans';
     font-size: 32px;
 }
@@ -39,8 +37,7 @@ img {
 
 .center {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .sub-title {
@@ -48,13 +45,16 @@ img {
 }
 
 .container {
-    width: 1052px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     display: block;
 }
 
 #intro {
     background: url('../img/intro-bg.png') no-repeat center center;
     height: 100vh;
+    width: 100%;
+}
+
+#snow1 {
+    position: absolute;
 }
