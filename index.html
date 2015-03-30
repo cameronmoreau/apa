@@ -10,63 +10,70 @@
 </head>
 
 <body>
-    <section class="section" id="intro" style="position: relative">
+    <section id="intro" style="">
         <canvas id="snow1"></canvas>
-        <div class="center container">
-            <img src="img/viking-hat.png" style="padding: 50px 0px 20px 0px; margin: 0 auto;">
-            <div class="center">
-                <div class="arrow-intro heading">Beowulf Tames the Dragon</div>
-                <img src="img/apaethosaurus.png" style="padding: 25px 0px 20px 0px; margin: 0 auto;">
-                <div class="sub-title" style="font-size: 12px">Scroll down to discover more...</div>
-                <img src="img/accent1.png" style="margin: 30px 50% 0px 50%">
-                <img src="img/intro-trees.png" style="margin: 50px auto 100px;">
-                <div class="container" style="background-color: #E6E6E6;">
-                    <img src="img/castle.png" style="margin: 0 auto">
-                    <div class="heading" style="font-size: 65px; margin: 20px 0px 20px 0px">INTRODUCTION</div>
-                    <img src="img/text-1.png" style="padding: 0px 0px 100px 0px; margin: 0 auto;">
-                </div>
-            </div>
-    </section>
-    <!-- Section 2 -->
-    <section id="scene-2" class="section" style="position: relative; margin: 100 auto;">
-        <div class="container" style="background: #E6E6E6;">
-            <img src="img/top-bg.png" style="margin-top: 630px; width: 100%;">
-            <div class="grendel-info" style="position: absolute; top: 300px; left: 110px; font-style: italic;">Name: Grendel
-                <br>
-                <br>Height: 11' 1"
-                <br>
-                <br>Weight: Heavy
-                <br>
-                <br>Favorite Food: Raw People and Shushi
-                <br>
-                <br>Hope: To be accepted by mother
-            </div>
-            <div class="grendel-info" style="position: absolute; top: 300px; right: 200px;">
-                His brave warriors slayed many
-                <br>
-                <br> monster, but none had defeated
-                <br>
-                <br> the grievous Grendel. The king came
-                <br>
-                <br> to believe that he was cursed and
-                <br>
-                <br> sent message far and wide, looking
-                <br>
-                <br> for a hero.
-            </div>
-            <img src="img/grendel.png" style="position: absolute; left: 200px; top: 350px; z-index: 2">
-            <img src="img/grendel-text.png" style="position: absolute; top 300px; z-index: 1;">
-            <img src="img/numbers.png" style="margin: 0 auto; position: absolute; top: 700px;">
-            <img src="img/bottom-bg.png" style="right: 0; position: absolute; top: 800px;">
+        <div class="container center">
+            <img src="img/viking-hat.png" style="width: 5%; margin: 50px auto;">
+            <div class="arrow-intro heading" style="">Beowulf Tames the Dragon</div>
+            <img id="apa-img" src="img/apaethosaurus.png" style="width: 25%; padding: 25px 0px 40px 0px; margin: 0 auto;">
+            <div class="sub-title" style="font-size: .8vw">Scroll down to discover more...</div>
+            <img src="img/accent1.png" id="accent-1" style="max-width: 1%; margin: 1% 50% 2.5% 50%">
+            <img src="img/intro-trees.png" style=" width: 80%; margin: 2.5% 0px 50px 0px; padding: 0">
         </div>
     </section>
-    <!-- Section 3 -->
-    <section id="scene-3" class="section">
+    <!-- section 2 -->
+    <section id="scene-2">
+        <div class="container center">
+            <img src="img/castle.png" style="margin: 10% auto 0">
+            <div class="heading" style="font-size: 65px; margin: 20px 0px 30px 0px">INTRODUCTION</div>
+            <img src="img/text-1.png" style="width: 50%; padding: 0px 0px 0px 0px;">
+        </div>
     </section>
+    <!-- section 3 -->
+    <section id="scene-3" style="">
+        <div style="position: absolute; width: 100%; height: 200%; 
+                                 background-color: #E6E6E6;
+                                 z-index: -2; margin: 24% 0">
+            <!-- Scene 4 -->
+            <div id="scene-4" style="margin: 30% 0; z-index: 2;"></div>
+        </div>
+        <div class="grendel-info" style="display: inline-block; float: left; margin: 30% 0px 0 5%; font-style: italic; ">Name: Grendel
+            <br>
+            <br>Height: 11' 1"
+            <br>
+            <br>Weight: Heavy
+            <br>
+            <br>Favorite Food: Raw People and Shushi
+            <br>
+            <br>Hope: To be accepted by mother
+        </div>
+        <div class="grendel-info" style="display: inline-block; float: right; margin: 30% 5% 0px 0px;">
+            His brave warriors slayed many
+            <br>
+            <br> monster, but none had defeated
+            <br>
+            <br> the grievous Grendel. The king came
+            <br>
+            <br> to believe that he was cursed and
+            <br>
+            <br> sent message far and wide, looking
+            <br>
+            <br> for a hero.
+        </div>
+        <img src="img/grendel.png" style="width: 45%; z-index: 1; margin: -10% 90% 0 10%;">
+    </section>
+
+    <!-- section 5 -->
+        <section id="scene-5" style="margin: 10% 0; height: 100vh; z-index: 1">
+        <img src="img/warrior.png" style="float: right; margin: 30% 5%; width: 25%">
+        </section>
+
+
     <!-- javascript -->
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/jquery.stellar.min.js" type="text/javascript"></script>
     <script src="js/jquery.snow.js" type="text/javascript"></script>
+    <script src="js/jquery.animations.js" type="text/javascript"></script>
 </body>
 
 </html>
