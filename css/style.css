@@ -22,6 +22,7 @@ body {
 
 section {
     position: relative;
+    margin: 0 auto;
 }
 
 .arrow-intro {
@@ -35,7 +36,7 @@ section {
     font-family: 'Ostrich Sans';
 }
 
-.grendel-info {
+.info {
     font-size: 12px;
     font-family: 'Open Sans';
 }
@@ -67,13 +68,30 @@ section {
 
 #scene-5 {
     background: url('../img/bottom-bg.png') no-repeat;
-    background-size:  100% 100%;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+#scene-6 {
+    background: url('../img/wall.png') no-repeat;
+    background-size: 100%;
+    height: 70vh;
 }
 
 #intro {
     background: url('../img/intro-bg.png') no-repeat center;
     background-size: 100% 100vh;
     height: 100vh;
+}
+
+#warrior-back {
+    background: url('../img/warrior-back-drop.png') no-repeat;
+    background-size: 100%;
+}
+
+#text-box {
+    background: url('../img/scene-5-back.png') no-repeat;
+    background-size: 100%;
 }
 
 #snow1 {
