@@ -115,8 +115,10 @@ section {
 }
 
 #scene-11 {
-    height: 1200px;
+    height: 2200px;
 }
+
+#scene-12 {}
 
 #intro {
     background: url('../img/intro-bg.png') no-repeat center;
