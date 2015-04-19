@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<!-- TODO
+    Add animations. 
+    Fix scaling. (image width) <<<<
+    CODE CLEAN.
+-->
 
 <head>
     <meta charset="utf-8">
@@ -10,59 +15,63 @@
 </head>
 
 <body>
-    <section id="intro" style="">
+    <section id="intro" style="margin: -3.5% 0;">
         <canvas id="snow1"></canvas>
         <div class="container center">
-            <img src="img/viking-hat.png" style="width: 10%; margin: 50px auto;">
+            <img src="img/viking-hat.png" style="width: 10%; margin: 0 auto;
+            padding: 10% 0 5% 0;">
             <div class="arrow-intro" style="">Beowulf Tames the Dragon</div>
-            <img id="apa-img" src="img/apaethosaurus.png" style="width: 30%; padding: 25px 0px 40px 0px; margin: 0 auto;">
-            <div class="sub-title" style="font-size: 1vw">
+            <img id="apa-img" src="img/apaethosaurus.png" style="width: ; padding: 25px 0px 40px 0px; margin: 0 auto;">
+            <div class="sub-title" style="font-size: 14px">
                 Scroll down to discover more...
             </div>
-            <img src="img/accent1.png" id="accent-1" style="max-width: 5%; margin: 1% 50% 2.5% 50%">
-            <img src="img/intro-trees.png" style=" width: 85%; margin: 25% 0px 50px 0px; padding: 0">
+            <img src="img/accent1.png" id="accent-1" style="margin: 1% 50% 2.5% 50%">
+            <img src="img/intro-trees.png" style=" width: 85%; margin: 25% auto; padding: 0">
         </div>
     </section>
     <!-- section 2 -->
     <section id="scene-2">
         <div class="container center">
             <img src="img/castle.png" style="margin: 10% auto 0">
-            <div class="heading" style="margin: 20px 0px 30px 0px">INTRODUCTION
+            <div class="heading" style="margin: 20px auto">INTRODUCTION
             </div>
-            <img src="img/text-1.png" style="width: 50%; padding: 0px 0px 0px 0px;">
+            <img src="img/text-1.png" style="width: 50%; margin: 0 auto">
         </div>
     </section>
     <!-- section 3 -->
-    <section id="scene-3" style="">
-        <div style="position: absolute; width: 100%; height: 200%; 
-        background-color: #E6E6E6;z-index: -2; margin: 24% 0">
-            <!-- Scene 4 -->
-            <div id="scene-4" style="margin: 30% 0; z-index: 2;"></div>
-        </div>
-        <div class="text double-space" style="display: inline-block; float: left; margin: 30% 0px 0 5%; font-style: italic; ">Name: Grendel
+    <section id="scene-3">
+        <div class="text double-space" style="display: inline-block; 
+        float: left; margin: 30% 0px 0 5%; font-style: italic;">
+            Name: Grendel
             <br>Height: 11' 1"
             <br>Weight: Heavy
             <br>Favorite Food: Raw People and Shushi
             <br>Hope: To be accepted by mother
         </div>
-        <div class="text double-sapce" style="display: inline-block; float: right; margin: 30% 5% 0px 0px;">
-            His brave warriors slayed many
-            <br> monster, but none had defeated
-            <br> the grievous Grendel. The king came
-            <br> to believe that he was cursed and
-            <br> sent message far and wide, looking
+        <div class="text double-space center" style="display: inline-block; 
+        float: right; margin: 25% 5% 0px 0px; top: 25%;">
+            Hrothgar, king of Danes had many
+            <br> brave warriors, but none could
+            <br> defeat the grevious Grendel.
+            <br>
+            <br> The king believed he was cursed and
+            <br> sent messages far and wide, looking
             <br> for a hero.
         </div>
-        <img src="img/grendel.png" style="width: 45%; z-index: 1; margin: -10% 90% 0 10%;">
+        <img src="img/grendel.png" style="width: 45%; z-index: 1; 
+        position: absolute; top: 65%; left: 15%;">
+        <img src="img/grendel-text.png" style="width: 100%;">
     </section>
     <!-- section 5 -->
-    <section id="scene-5" style="margin: 10% 0; z-index: 1">
-        <img src="img/numbers.png" style="width: 90%; margin: -6% 0 0 2%;">
-        <span style="position: absolute; top: 35%; left: 7%;" class="text" style="font-size: 20px;">STRUCTURE</span>
-        <span style="position: absolute; top: 30%; left: 31%;" class="text" style="font-size: 20px;">WRITING STYLE</span>
-        <span style="position: absolute; top: 25%; left: 55%;" class="text" style="font-size: 20px;">IN-TEXT CITATION</span>
-        <span style="position: absolute; top: 20%; left: 83%;" class="text" style="font-size: 20px;">REFERENCE</span>
-        <div id="warrior-back" style="float: right; margin: 0 2%; width: 35%;">
+    <!-- BUG HERE (Background image for scaling)-->
+    <section id="scene-5" style="margin: 42% 0 0 0; z-index: 1">
+        <img src="img/numbers.png" style="width: 90%; position: absolute;
+        top: -10%; left: 5%;">
+        <span style="position: absolute; top: 35%; left: 9%;" class="text" style="font-size: 20px;">STRUCTURE</span>
+        <span style="position: absolute; top: 30%; left: 33%;" class="text" style="font-size: 20px;">WRITING STYLE</span>
+        <span style="position: absolute; top: 25%; left: 57%;" class="text" style="font-size: 20px;">IN-TEXT CITATION</span>
+        <span style="position: absolute; top: 20%; left: 85%;" class="text" style="font-size: 20px;">REFERENCE</span>
+        <div id="warrior-back" style="float: right; margin: 20% 2%; width: 35%;">
             <p class="text double-space" style="margin: 10% 10% 0 10%; 
             font-size: 12px; text-align: right;">
                 <span style="font-weight: bold;">Name: </span>Beowulf
@@ -71,90 +80,101 @@
                 <br><span style="font-weight: bold;">Adress:</span> Geatland
             </p>
             <img src="img/warrior.png" style="float: left; margin: 0 0; 
-            width: 60%;">
+            width: 70%;">
         </div>
-        <div id="text-box" style="margin: 15% 0 0; width: 35%; height: 70%;">
+        <div id="text-box" style="float: left; margin: 30% 0 0 0; width: 35%; height: 70%;">
             <p class="text double-space" style="padding: 20%; font-size: 14px;">
-                Warrior Beowulf decided to challange Grendel.
-                <br>With his most loyal men, he undertook the
-                <br>harrowing journey to Daneland.
+                Beowulf, a fearless warrior of distant Geatland,
+                <br>decided to challange Grendel. He gathered his
+                <br>most loyal men, and they journeyed to Daneland.
                 <br>
                 <br>He knew he must impress the king; therfore,
-                <br>the vrave Beowulf prepared a Golden Scroll
-                <br>with impeccable APA style to convince the
+                <br>the brave Beowulf prepared a Golden Scroll
+                <br>with impeccable
+                <span style="font-weight: bold">APA style</span> to convince the
                 <br>king of his Geatish guile.
             </p>
         </div>
     </section>
     <!-- section 6 -->
     <section id="scene-6" style="z-index: 1;">
-        <img src="img/throne.png" style="margin: 23% 40%  0; width: 20%;">
-        <p class="heading center">
-            PART I: STRUCTURE
-        </p>
-        <div class="center text" style="z-index: 2;
-        background: url('img/part1-arrows.png') no-repeat center; 
-        width: 90%;background-size: 80% 50%; margin: 5% auto;
-        font-size: 12x;">
-            The men were taken to King Hrothgar at once! As they rushed into the hall,
-            <br>Hrothgar looked down upon them from his throne.
-        </div>
     </section>
     <!-- section 7 -->
     <section id="scene-7" style="">
-        <div class="center text" style="font-size: 30px; 
-        padding: 5% 0 10%;">
-            Beowulf knew that every hero must attend to
-            <br><span style="color: red;">a title page</span> that would invoke the sentiment
-            <br>of the toughest of tycoons, the pages must
-            <br>have <span style="color: red;">a running head</span> and page numbers for
-            <br>the merry mead-filled master to follow along,
-            <br>and <span style="color: red;">headings</span> helped to pattern a
-            <br><span style="color: red;">persuasive prose.</span>
+        <img src="img/throne.png" style="position: absolute;
+        top: -15%; left: 39%; ; width: 20%; z-index: 2;">
+        <p class="heading center" style="padding: 150px 0 0 0;">
+            PART I : STRUCTURE
+        </p>
+        <div class="center text" style="z-index: 2;
+        background: url('img/part1-arrows.png') no-repeat center;
+        width: 90%;background-size: 60% 30%;font-size: 14px;
+        margin: 50px auto">
+            The men were taken to King Hrothgar at once! As they rushed into the hall,
+            <br>Hrothgar looked down upon them from his throne. He had heard from many
+            <br>hpeful heros who could not fulfuill their promises.
+        </div>
+        <div class="center text" style="font-size: 40px; 
+        padding: 0 0 10%; color: #6d6d70">
+            The scroll! It contained
+            <br>
+            <span style="color: red;">1) a title page</span> invoking the sentiments of the
+            <br>monstous of monarchs,
+            <span style="color: red;">2) a running head</span>
+            <br>and page numbers for the merry mead-filled
+            <br>master to follow along, and <span style="color: red;">3) headings</span>
+            <br>helped to pattern a <span style="color: red;">persuasive prose.</span>
         </div>
         <div style="background: url('img/scene-7-textback.png') 
-        no-repeat; background-size: 100% 100%; width: 40%; height: 30%;
+        no-repeat; background-size: 100% 100%; width: 40%; height: 20%;
         font-size: 14px; float: right; z-index: 2; margin: 0 5%;">
-            <p class="text double-space" style="margin: 20% 20%;">
-                Many hopefull heros had come to him with
-                <br>unfulfilled promises of Grendel's defeat.
+            <p class="text double-space" style="margin: 15% 10% 0 0;
+            text-align: right;">
+                Beowulf approched the king with his tactful
+                <br> text. The Golden Scroll shone upon the face of
+                <br> the king and with a quick glance at its pages his
+                <br> countenance corrected.
             </p>
         </div>
+        <img src="img/text-box.png" style="position: absolute; top: 80%;
+        width: 50%">
+        <p class="text double-space" style="position: absolute; top: 86%;
+        left: 5%">
+            "Beowulf, hero of the poem, will slay the beast and end our curse!"
+            <br>Roared the king. The hall erupted into cheers.
+        </p>
         <div style="background: url('img/scene-7-bottom.png') no-repeat;
-        background-size: 100% 100%; width: 95%; 
-        margin: 25% 0;">
-            <div class="text center" style="margin: 0 0 0; 
-            padding: 10% 0 0;">
-                "Beowulf, hero of the poem, will slay this best and end our curse!"
-            </div>
-            <img src="img/table.png" style="width: 30%; margin: 10% 35%">
-            <p class="heading center" style="">
-                part ii: writhing style
-            </p>
+        background-size: 95% 100%; height: 50%;
+        margin: 400px 0;">
+            <img src="img/table.png" style="position: absolute;
+            top: 122%; left: 40%;">
         </div>
+        <p class="heading center" style="margin: -300px 0 0 0;">
+            part ii: writhing style
+        </p>
     </section>
     <!-- section 8 -->
-    <section id="scene-8" style="background-color: #E6E6E6;">
+    <section id="scene-8" style="">
         <p class="text" style="margin: 5%; float: left;">
             There was a loud sudden beating at the door. Grendel Appeared. He
-            <br>stomped into the hall and devoured an off-guard soldier. beowulf and his
+            <br>stomped into the hall and devoured an off-guard soldier. Beowulf and his
             <br>men began to battle the beast, but they soon grew tired.
         </p>
         <img src="img/soldier.png" style="position: absolute;
-        top: 7%; right: 15%" ;>
+        top: 5%; right: 15%" ;>
         <p class="text center" style="font-size: 40px; padding: 25% 0;
         margin: 0 0 0 15%;">
-            Beowulf reached for aid: <span style="color: #33FFFF;">
+            Beowulf reached for aid: <span style="color: #f9ec2f;">
             the Golden Scroll.
             </span>
             <br>The horrible hermit becan to leap and
-            <br>lunge away from the letters. Beowulf pored
-            <br><span style="color: #33FFFF;">over the scientific prose,
-            peppered with
-            <br>properly-placed prepositions</span>
+            <br>lunge away from the letters. Beowulf
+            <br>pourted
+            <span style="color: #82cacd;">over the scientific prose, peppered
+            <br>with properly-placed prepositions</span>
             <br>and punctuation.
         </p>
-        <img style="position: absolute; top: 47%; left: 28%; width: 80%;" src="img/grendel-defeated.png">
+        <img style="position: absolute; top: 47%; left: 35%; width: ;" src="img/grendel-defeated.png">
         <img style="position: absolute; top: 65%; left: 30%; width: 15%;" src="img/beowulf.png">
         <img style="position: absolute; top: 55%; left: 10%; width: 50%;" src="img/slash.png">
     </section>
@@ -162,41 +182,42 @@
     <section id="scene-9">
         <img src="img/scene8-textbox.png" style="margin: 0 20%; 
         width: 80%;">
-        <p class="text double-space" style="font-size: 1.4vw; 
+        <p class="text double-space" style="font-size: 20px; 
         position: absolute;
         top: 0; left: 25%;">
             As a final blow, Beowulf fatally wounded the
-            <br>beast with his active voice and clarity.
+            <br>beast by <span style="color: red;">
+            his active voice and clarity.</span>
         </p>
-        <p class="text double-space" style="font-size: 1.4vw; 
+        <p class="text double-space" style="font-size: 20px; 
         position: absolute;
         top: 5%; left: 65%; text-align: right;">
-            Grendel grew ill and shrieked with soul-crushing
-            <br>sorrow, aware the Beowulf avoided bias by
-            <br>accurately recounting his exciting experineces.
-            <br>Grendel fled to face death.
+            Grendel shrieked with soul-crushingsorrow! Aware
+            <br>the Beowulf <span style="color: red;">avoided bias</span> by accurately recounting
+            <br>his exciting experineces. Grendel fled to face death.
         </p>
         <img src="img/monster.png" style="position: absolute; top: 20%;
         left: -18%; width: 40%;">
         <p class="heading center" style="margin: 5% auto;">
             part iii: in-text citation
         </p>
-        <p class="text double-space" style="font-size: 1.4vw; text-align: right; 
-        padding: 0%; margin: 10% 30% 0 20%;">
-            Grendel lay still in a cave below murky waters. Overlooking
-            <br> Grendel was his vengeful mother, who departed in a fit of rage to
-            <br>revenge. She evaded is effervescent esaay and his scroll of sorcery.
+        <p class="text double-space" style="font-size: 20px; text-align: right; 
+        padding: 0%; margin: 5% 30% 0 20%;">
+            Grendel's vengful mother stood over her son laying still in a cave
+            <br>below murky waters. Beowulf chased the queen, who departed in a
+            <br>fit of rage and evaded his effervescent essay and his scroll
+            <br> of sorcery.
         </p>
-        <p class="text double-space" style="font-size: 1.4vw; padding: 5%; 
-        margin: 10% 20%; color: white;">
+        <p class="text double-space" style="font-size: 20px; padding: 5%; 
+        margin: 5% 25%; color: white;">
             Beowulf was about to recite the writing when the wind
             <br>whipped off the end of the scroll.
         </p>
     </section>
     <!-- section 10 -->
     <section id="scene-10">
-        <p class="text center" style="margin: 5% 40% 0 5%; font-size: 2.5vw; 
-        color: gray;">
+        <p class="text center" style="margin: 5% 40% 0 5%; font-size: 40px; 
+        color: #6d6d70;">
             The reference list floated to far for
             <br>fetching; thus the clever Beowulf made
             <br>careful mention of the
@@ -210,41 +231,42 @@
         top: 2%; right: 15%;">
         <img src="img/text-boxes.png" style="width: 100%; position: absolute;
         top: -10%; left: 0; z-index: -1;">
-        <p class="text" style="font-size: 1.1vw;position: absolute; top: 50%; 
+        <p class="text" style="font-size: ;position: absolute; top: 50%; 
         left: 10%">
             <scpan style="color: red;">CITED WORKS WITH ONE OR TWO</scpan>
             <br>
             <br> authors merely mentioned the authors' last
-            <br> names and the year of publication within
-            <br> parentheses. The beast began to shiver.
+            <br> names or institutional author's full name
+            <br> and the year of publication within paren-
+            <br>theses.
             <br> See examples
+            <br>...The beast began to shiver.
         </p>
-        <p class="text" style="font-size: 1.1vw;position: absolute; top: 50%; 
+        <p class="text" style="font-size: ;position: absolute; top: 50%; 
         left: 40%">
             <span style="color: red;">CITED WORKS WITH THREE TO FIVE AUTHORS,</span>
             <br>
             <br> Beowulf menctioned each of their names in
             <br>additon to their publication years, but
-            <br>omitting all but the first authors' last names
+            <br>omitted all but the first authors' last names
             <br>upon repeated use.
             <br>See examples
+            <br>the beast began to moan.
         </p>
-        <p class="text" style="font-size: 1.1vw;position: absolute; top: 50%; 
+        <p class="text" style="font-size: ;position: absolute; top: 50%; 
         left: 70%">
             <span style="color: red;">FOR SOURCE WITH SIX OR MORE AUTHORS</span>
             <br>
             <br>Beowulf omitted all but the first last name.
-            <br>In place of more than one last name, he
-            <br>whispered "et al.", and grendels mother
-            <br>roared in outrange at the perfection of his
-            <br>pitch. As the freak began to fall, Beowulf
-            <br>finished her of as he stated that
-            <br>puncuation falls post the parentheses.
+            <br>In place of the omitted, he whispered, "et
+            <br>al."
             <br>See example
+            <br>Grendel's mother roared in outrage at the
+            <br>perfection of his pitch.
         </p>
-        <p class="text center" style="font-size: 3.5vw; position: absolute;
+        <p class="text center" style="font-size: 50px; position: absolute;
         top: 78%; left: 20%; color: white;">
-            <span style="color: #33FFFF">As the freak began to fall, Beowulf
+            <span style="color: #82cacd">As the freak began to fall, Beowulf
             <br>finished her off as she cried,</span>
             <br>"Puncuation falls past parenthses!"
         </p>
@@ -255,35 +277,37 @@
             <br> the golden scroll
         </p>
         <img src="img/section11-arrows.png" style="width: 70%; margin: 0 15%;">
-        <img src="img/dragon.png" style="width: 70%; margin: 0 0 0 35%;">
+        <img src="img/dragon.png" style="width: 70%; margin: 0 0 0 30%;">
         <img src="img/wings.png" style="width: 50%; position: absolute; top: 25%;
         left: 27%; z-index: -1;">
         <img src="img/sun.png" style="width: 20%; position: absolute; top:20%;
         left: 75%;">
         <img src="img/text-boxes2.png" style="position: absolute; width: 100%;
-        top: 43.4%; left: 0;">
-        <p class="text center" style="font-size:  1.5vw; position: absolute;
-        top: 45%; left: 25%;">
-            <span class="text" style="font-size: 4vw;">PLAGIARISM STRUCK.</span>
+        top: 42.9%; left: 0; z-index: -1;">
+        <p class="text center" style="font-size:;">
+            <span class="text" style="font-size: 70px; color: #6d6d70">
+            PLAGIARISM STRUCK.
+            </span>
             <br>Beowulf sought his renageade reference list, and heard tell of fiery fury, who was
             <br>claiming the work as his own.
         </p>
-        <p class="text double-space" style="font-size: 1.5vw;position: absolute; 
+        <p class="text double-space" style="font-size: 25px;position: absolute; 
         top: 60%; 
         left: 5%;">
             Beowulf confronted the
-            <br><span sytle="color: red;">APA</span>ETOSAURUS, demanding that
+            <br><span style="color: red;">APA</span>ETOSAURUS, demanding that
             <br>the dragon cease and desist.
         </p>
-        <p class="text double-space" style="font-size: 1.5vw;position: absolute; 
-        top: 65%; left: 45%;">
+        <p class="text double-space" style="font-size: 20px;position: absolute; 
+        top: 67%; left: 45%;">
             Beowulf responded with regal recital of
             <br>references only an author would know.
-            <br>Each reference had basic structure
+            <br>Each reference had a <span style="font-weight: bold;">
+            basic structure
             <br>containing the creators' last names, date,
-            <br>title (in italics), and location.
+            <br>title (in italics), and location.</span>
         </p>
-        <p class="text center double-space" style="font-size: 1.5vw;position: absolute; top: 85%; left: 15%; color: white;">
+        <p class="text center double-space" style="font-size: 20px;position: absolute; top: 85%; left: 15%; color: white;">
             <span style="font-weight: bold;">Books</span> - locations are the publisher's location and name.
             <br>
             <span style="font-weight: bold;">Online videos and webpages</span> - locations are as follows: "Video posted to"
@@ -294,29 +318,36 @@
         </p>
         <img src="img/beowulf3.png" style="width: 12%; position: absolute; top: 72%; 
         left: 10%;">
-        <img src="img/dragon-head.png" style="width: 30%; position: absolute; 
+        <img src="img/dragon-head.png" style="width: 25%; position: absolute; 
         top: 65%; left: 75%;">
         <img src="img/proveit.png" style="width: 25%; position: absolute; top: 60%; left: 60%;">
     </section>
     <!-- section 12 -->
     <section id="scene-12">
-        <img src="img/green-arrows.png" style="width: 80%; margin: 40px 10% 0 10%;">
-        <p class="text center" style="font-size: 3vw; color: #33CC00;
-        position: absolute; top: 0; left: 32%;">
+        <img src="img/green-arrows.png" style="width: ; margin: 100px auto 0;">
+        <p class="text center" style="font-size: 45px; color: rgb(139,197,63);
+        position: absolute; top: -10%; left: 33%;">
             APAETOSAURUS became
             <br>increasingly impressed
         </p>
-        <p class="text center" style="font-size: 2vw; margin: 100px 0 0;">
-            Especially as he saw journal articles had more detail:
+        <p class="text center" style="font-size: 30px; margin: 50px 0 0;
+        color: #6d6d70">
+            especially as he saw journal articles had more detail:
         </p>
-        <p class="text center" style="margin: 150px 0 0;">
-            the article title, and the italicized journal title and volume number, followed by the issue and page numbers.
+        <p class="text center" style="margin: 100px 0 0;">
+            the <span style="color: red;">article title</span>, and the
+            <span style="color: red;">italicized journal title</span> and
+            <span style="color: red;">volume number</span>, followed by
+            <span style="color: red;">the <br>issue</span> and
+            <span style="color: red;">page numbers.</span>
             <br>APAETOSAURUS, breathless from Beowulf's rapid recollection, returned the stolen scroll to the appeased
             <br>Beowulf. The people were releived, and the land returned to peace and prosperity.
         </p>
-        <p class="text center" style="margin: 50px 0 0;">
-            <span class="heading" style="color: #33CC00;">
-            end of the journey</span>
+        <p class="text center" style="margin: 76px 0 0;">
+            <span class="heading" style="color: rgb(139,197,63);">
+            end of the journey
+            </span>
+            <br> Test your knowledge here
         </p>
         <img src="img/ship.png" style="position: absolute; top: 600px; left: 65%;
         width: 15%;">
@@ -324,6 +355,25 @@
         width: 30%;">
         <img src="img/scene-12-bg.png" style="width: 100%; position: absolute;
         top: 300px; z-index: -1;">
+        <p class="text double-space" style="font-size: 12px; 
+        position: absolute; top: 1200px; left: 100px;">
+            Sources
+            <br>Quiz
+            <br>Score Report
+        </p>
+        <p class="text double-space" style="font-size: 12px;
+        position: absolute; top: 1200px; left: 300px;">
+            About us
+            <br>News
+            <br>Contacts
+        </p>
+        <p class="text double-space" style="font-size: 12px;
+        position: absolute; top: 1200px; left: 1000px;">
+            University of Texas at Arlington
+            <br> +44 (0)845 873 7898
+            <br>fightapatosaurus@uta.edu
+            <br>The Library at The University of Texas at Arlington
+        </p>
     </section>
     <!-- javascript -->
     <script src="js/jquery.min.js" type="text/javascript"></script>
