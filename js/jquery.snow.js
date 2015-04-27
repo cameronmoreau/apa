@@ -1,16 +1,21 @@
 window.onload = function() {
+    makeItSnow("#snow1");
+    makeItSnow("#snow2")
+}
+
+function makeItSnow(selector) {
     //canvas init
-    var canvas = document.getElementById("snow1");
+    var canvas = document.querySelector(selector);
     var ctx = canvas.getContext("2d");
 
     //canvas dimensions
     var W = window.innerWidth;
     var H = window.innerHeight;
-    canvas.width = W;
+    canvas.width = W / 1.5;
     canvas.height = H;
 
     //snowflake particles
-    var mp = 35; //max particles
+    var mp = 25; //max particles
     var particles = [];
     for (var i = 0; i < mp; i++) {
         particles.push({
