@@ -15,8 +15,8 @@ $("document").ready(function() {
     fadeInAnimation("#part2", 3000, '50%');
     fadeInAnimation("#part3", 3000, '50%');
     fadeInAnimation("#part4", 3000, '50%');
-    fadeInAnimation("#struck", 3000, '50%');
-    fadeInAnimation("#prove", 3000, '20%');
+    fadeInAnimation("#struck", 4000, '50%');
+    fadeInAnimation("#prove", 4000, '40%');
     fadeInAnimation("#text-box", 3000, '50%');
     fadeInAnimation(".slash.left", 3000, '50%');
     fadeInAnimation(".slash.right", 5000, '50%');
@@ -33,9 +33,9 @@ $("document").ready(function() {
 
     addClassAnimation(".change", "rToG", '30%');
     $(".change").css("opacity", "1");
-    addClassAnimation("#warrior", "animated fadeInRight", '10%');
-    addClassAnimation("#warrior2", "animated fadeInRight", '30%');
-    addClassAnimation("#monster", "animated fadeInLeft", '30%');
+    addClassAnimation("#warrior", "animated fadeInRight", '40%');
+    addClassAnimation("#warrior2", "animated fadeInRight", '40%');
+    addClassAnimation("#monster", "animated fadeInLeft", '40%');
     addClassAnimation("#scene-9", "animated fadeIn withBack", '30%');
     addClassAnimation(".beowulf", "animated fadeInRight", '30%');
 
@@ -49,25 +49,43 @@ $("document").ready(function() {
         });
     };
 
-    /*  $('#yourElement').one('webkitAnimationEnd mozAnimationEnd 
-          MSAnimationEnd oanimationend animationend ', 
-          addClassAnimation()); //TODO: add the grendel movement animations
-      */
+    // $('#yourElement').one('webkitAnimationEnd mozAnimationEnd 
+    //     MSAnimationEnd oanimationend animationend ', fall()); //TODO: add the grendel movement animations
 
-    function fall(selector) {
-        $(selector).css({
-            '-webkit-transform': 'translate()',
-            'transform': 'translate()'
-        });
+    /* Falling animation */
+    $(".fall").waypoint(function() {
+        setTimeout(fall, 2000);
+        this.disable();
+    }, {
+        offset: '50%'
+    });
+
+    function fall() {
+        var y = 0;
+
+        function loop() {
+            y += .5;
+            var ratio = (y * y) + y;
+
+            $(".fall").css({
+                '-webkit-transform': 'translate(0px,' + ratio + 'px)',
+                'transform': 'translate(0px,' + ratio + 'px)'
+            });
+
+            if (y > 10) {
+                clearInterval(interval);
+            }
+        }
+        var interval = setInterval(loop, 10);
     };
 
-    /* Tree animation */
+    /* Grendel animation */
     (function() {
         var iterator = (Math.PI / 2);
 
         jQuery.fn.rotate = function() {
             var angle = 10 * Math.cos(iterator);
-            iterator = iterator + (Math.PI / 48);
+            iterator = iterator + (Math.PI / 96);
 
             if (iterator === (Math.PI * 2)) {
                 iterator = 0;
@@ -85,6 +103,6 @@ $("document").ready(function() {
             $('.arm').rotate();
         };
 
-        setInterval(animate, 50);
+        setInterval(animate, 30);
     })();
 });

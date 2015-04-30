@@ -1,6 +1,6 @@
 window.onload = function() {
     makeItSnow("#snow1");
-    makeItSnow("#snow2")
+    makeItSnow("#snow2");
 }
 
 function makeItSnow(selector) {
@@ -25,6 +25,7 @@ function makeItSnow(selector) {
             d: Math.random() * mp //density
         })
     }
+
 
     //Lets draw the flakes
     function draw() {
