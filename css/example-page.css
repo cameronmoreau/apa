@@ -8,8 +8,8 @@
 }
 
 html {
+    min-width: 1300px;
     max-width: 1600px;
-    min-width: 1200px;
     margin: 0 auto;
 }
 
@@ -28,13 +28,15 @@ img {
 body {
     height: 100%;
     width: 100%;
+    margin: 0 auto;
 }
 
 .top-grad {
-    width: 100%;
-    height: 1000px;
+    width: 1200px;
     position: absolute;
     z-index: -1;
+    left: 50%;
+    margin-left: -600px;
 }
 
 .arrow-intro {
@@ -44,20 +46,69 @@ body {
 }
 
 .center {
-    text-align: center;
     margin: 0 auto;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .whitebox {
-    top: 800px;
+    top: 760px;
+    left: 50%;
+    margin-left: -600px;
 }
 
 .graybox1 {
-    top: 1500px;
+    top: 1375px;
+    left: 50%;
+    margin-left: -600px;
+}
+
+.graybox2 {
+    top: 2247px;
+    left: 50%;
+    margin-left: -600px;
+}
+
+.tealbox1 {
+    top: 1845px;
+    left: 50%;
+    margin-left: -600px;
+}
+
+.tealbox2 {
+    top: 2695px;
+    left: 50%;
+    margin-left: -600px;
+}
+
+.one {
+    position: absolute;
+    top: 1375px;
+    left: 20%;
+}
+
+.two {
+    position: absolute;
+    top: 1760px;
+    left: 65%;
+}
+
+.three {
+    position: absolute;
+    top: 2240px;
+    left: 31%;
+}
+
+.four {
+    position: absolute;
+    top: 2640px;
+    left: 55%;
 }
 
 .img-background {
-    width: 100%;
+    width: 1200px;
     z-index: -1;
     position: absolute;
 }
@@ -86,6 +137,18 @@ body {
     font-size: 12px;
 }
 
+.text-medium {
+    font-size: 30px;
+}
+
+.text-large {
+    font-size: 40px;
+}
+
+.single {
+    line-height: 100%;
+}
+
 .text {
     font-family: 'Open Sans';
     margin: 20px 0 0 0;
@@ -97,9 +160,51 @@ body {
 }
 
 .intro-text {
-    margin: 30% 0 0 0;
+    margin: 400px 0 0 0;
 }
 
-.headind {
-    font-size: 30px;
+.heading {
+    font-size: 50px;
+}
+
+#struct {
+    position: absolute;
+    top: 1500px;
+    left: 20%;
+}
+
+#writing {
+    position: absolute;
+    top: 1895px;
+    left: 60%;
+}
+
+#in {
+    position: absolute;
+    top: 2380px;
+    left: 25%;
+}
+
+#ref {
+    position: absolute;
+    top: 2775px;
+    left: 52%;
+}
+
+#title {
+    position: absolute;
+    top: 1515px;
+    left: 50%;
+}
+
+#properly {
+    position: absolute;
+    top: 1950px;
+    left: 15%;
+}
+
+#authors {
+    position: absolute;
+    top: 2390px;
+    left: 65%;
 }

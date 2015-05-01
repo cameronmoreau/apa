@@ -448,15 +448,15 @@ section > img.eye2 {
 }
 
 #warrior {
-    -webkit-animation-duration: 3s;
-    -moz-animation-duration: 3s;
-    animation-duration: 3s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
 }
 
 .beowulf {
-    -webkit-animation-duration: 4s;
-    -moz-animation-duration: 4s;
-    animation-duration: 4s;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    animation-duration: 3s;
 }
 
 #scene-3 {
@@ -528,19 +528,75 @@ section > img.eye2 {
     background-size: 100%;
 }
 
+.bread1 {
+    position: absolute;
+    top: 1790px;
+    left: 40%;
+    z-index: 1;
+}
+
+.bread2 {
+    position: absolute;
+    top: 1808px;
+    left: 59%;
+    z-index: 1;
+}
+
+.pitcher {
+    position: absolute;
+    top: 1800px;
+    left: 53%;
+    z-index: 1;
+}
+
+.ham {
+    position: absolute;
+    top: 1785px;
+    left: 47%;
+    z-index: 1;
+}
+
+.cup {
+    position: absolute;
+    top: 1775px;
+    left: 55%;
+    z-index: 1;
+}
+
 .snow {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
+.vibrate {
+    -webkit-animation-name: shake-little;
+    animation-name: shake-little;
+    -moz-animation-name: shake-little;
+    -webkit-animation-duration: 1000ms;
+    animation-duration: 1000ms;
+    -moz-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -moz-animation-play-state: running;
+}
+
 .shake.shake-little {
     -webkit-animation-name: shake-little;
     animation-name: shake-little;
     -moz-animation-name: shake-little;
-    -webkit-animation-duration: 3000ms;
-    animation-duration: 3000ms;
-    -moz-animation-duration: 3000ms;
+    -webkit-animation-duration: 4000ms;
+    animation-duration: 4000ms;
+    -moz-animation-duration: 4000ms;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
@@ -560,76 +616,76 @@ section > img.eye2 {
         -webkit-transform: translate(0px, 0px) rotate(0deg)
     }
     2% {
-        -webkit-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     4% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     6% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     8% {
         -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     10% {
-        -webkit-transform: translate(0px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     12% {
-        -webkit-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     14% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     16% {
         -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     18% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     20% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     22% {
-        -webkit-transform: translate(0px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     24% {
         -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     26% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     28% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     30% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     32% {
-        -webkit-transform: translate(0px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     34% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     36% {
-        -webkit-transform: translate(0px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     38% {
-        -webkit-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     40% {
         -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     42% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     44% {
-        -webkit-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     46% {
         -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     48% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     50% {
         -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
@@ -641,49 +697,49 @@ section > img.eye2 {
         -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     56% {
-        -webkit-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     58% {
-        -webkit-transform: translate(0px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     60% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     62% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     64% {
-        -webkit-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     66% {
         -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     68% {
-        -webkit-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     70% {
-        -webkit-transform: translate(0px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     72% {
-        -webkit-transform: translate(0px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     74% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     76% {
         -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     78% {
-        -webkit-transform: translate(0px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     80% {
-        -webkit-transform: translate(0px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     82% {
-        -webkit-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     84% {
-        -webkit-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     86% {
         -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
@@ -692,7 +748,7 @@ section > img.eye2 {
         -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     90% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     92% {
         -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
@@ -701,7 +757,7 @@ section > img.eye2 {
         -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     96% {
-        -webkit-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -webkit-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     98% {
         -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
@@ -713,76 +769,76 @@ section > img.eye2 {
         -moz-transform: translate(0px, 0px) rotate(0deg)
     }
     2% {
-        -moz-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     4% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     6% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     8% {
         -moz-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     10% {
-        -moz-transform: translate(0px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     12% {
-        -moz-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     14% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     16% {
         -moz-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     18% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     20% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     22% {
-        -moz-transform: translate(0px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     24% {
         -moz-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     26% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     28% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     30% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     32% {
-        -moz-transform: translate(0px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     34% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     36% {
-        -moz-transform: translate(0px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     38% {
-        -moz-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     40% {
         -moz-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     42% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     44% {
-        -moz-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     46% {
         -moz-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     48% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     50% {
         -moz-transform: translate(0px, 0px) rotate(-0.5deg)
@@ -794,49 +850,49 @@ section > img.eye2 {
         -moz-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     56% {
-        -moz-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     58% {
-        -moz-transform: translate(0px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     60% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     62% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     64% {
-        -moz-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     66% {
         -moz-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     68% {
-        -moz-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     70% {
-        -moz-transform: translate(0px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     72% {
-        -moz-transform: translate(0px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     74% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     76% {
         -moz-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     78% {
-        -moz-transform: translate(0px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     80% {
-        -moz-transform: translate(0px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(0px, -2px) rotate(-0.5deg)
     }
     82% {
-        -moz-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     84% {
-        -moz-transform: translate(-1px, 0px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     86% {
         -moz-transform: translate(0px, 0px) rotate(-0.5deg)
@@ -845,7 +901,7 @@ section > img.eye2 {
         -moz-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     90% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     92% {
         -moz-transform: translate(0px, 0px) rotate(-0.5deg)
@@ -854,7 +910,7 @@ section > img.eye2 {
         -moz-transform: translate(0px, 0px) rotate(-0.5deg)
     }
     96% {
-        -moz-transform: translate(-1px, -1px) rotate(-0.5deg)
+        -moz-transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     98% {
         -moz-transform: translate(0px, 0px) rotate(-0.5deg)
@@ -866,19 +922,19 @@ section > img.eye2 {
         transform: translate(0px, 0px) rotate(0deg)
     }
     2% {
-        transform: translate(-1px, -1px) rotate(-0.5deg)
+        transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     4% {
-        transform: translate(-1px, -1px) rotate(-0.5deg)
+        transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     6% {
         transform: translate(0px, 0px) rotate(-0.5deg)
     }
     8% {
-        transform: translate(0px, -1px) rotate(-0.5deg)
+        transform: translate(0px, -2px) rotate(-0.5deg)
     }
     10% {
-        transform: translate(-1px, -1px) rotate(-0.5deg)
+        transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     12% {
         transform: translate(0px, 0px) rotate(-0.5deg)
@@ -887,64 +943,64 @@ section > img.eye2 {
         transform: translate(0px, 0px) rotate(-0.5deg)
     }
     16% {
-        transform: translate(0px, -1px) rotate(-0.5deg)
+        transform: translate(0px, -2px) rotate(-0.5deg)
     }
     18% {
         transform: translate(0px, 0px) rotate(-0.5deg)
     }
     20% {
-        transform: translate(-1px, -1px) rotate(-0.5deg)
+        transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     22% {
-        transform: translate(-1px, -1px) rotate(-0.5deg)
+        transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     24% {
-        transform: translate(-1px, -1px) rotate(-0.5deg)
+        transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     26% {
-        transform: translate(-1px, 0px) rotate(-0.5deg)
+        transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     28% {
-        transform: translate(0px, -1px) rotate(-0.5deg)
+        transform: translate(0px, -2px) rotate(-0.5deg)
     }
     30% {
-        transform: translate(0px, -1px) rotate(-0.5deg)
+        transform: translate(0px, -2px) rotate(-0.5deg)
     }
     32% {
         transform: translate(0px, 0px) rotate(-0.5deg)
     }
     34% {
-        transform: translate(0px, -1px) rotate(-0.5deg)
+        transform: translate(0px, -2px) rotate(-0.5deg)
     }
     36% {
-        transform: translate(-1px, 0px) rotate(-0.5deg)
+        transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     38% {
-        transform: translate(-1px, -1px) rotate(-0.5deg)
+        transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     40% {
         transform: translate(0px, 0px) rotate(-0.5deg)
     }
     42% {
-        transform: translate(-1px, -1px) rotate(-0.5deg)
+        transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     44% {
-        transform: translate(-1px, 0px) rotate(-0.5deg)
+        transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     46% {
-        transform: translate(-1px, -1px) rotate(-0.5deg)
+        transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     48% {
-        transform: translate(0px, -1px) rotate(-0.5deg)
+        transform: translate(0px, -2px) rotate(-0.5deg)
     }
     50% {
-        transform: translate(0px, -1px) rotate(-0.5deg)
+        transform: translate(0px, -2px) rotate(-0.5deg)
     }
     52% {
         transform: translate(0px, 0px) rotate(-0.5deg)
     }
     54% {
-        transform: translate(-1px, 0px) rotate(-0.5deg)
+        transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     56% {
         transform: translate(0px, 0px) rotate(-0.5deg)
@@ -956,60 +1012,60 @@ section > img.eye2 {
         transform: translate(0px, 0px) rotate(-0.5deg)
     }
     62% {
-        transform: translate(0px, -1px) rotate(-0.5deg)
+        transform: translate(0px, -2px) rotate(-0.5deg)
     }
     64% {
         transform: translate(0px, 0px) rotate(-0.5deg)
     }
     66% {
-        transform: translate(-1px, -1px) rotate(-0.5deg)
+        transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     68% {
-        transform: translate(0px, -1px) rotate(-0.5deg)
+        transform: translate(0px, -2px) rotate(-0.5deg)
     }
     70% {
         transform: translate(0px, 0px) rotate(-0.5deg)
     }
     72% {
-        transform: translate(-1px, -1px) rotate(-0.5deg)
+        transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     74% {
-        transform: translate(-1px, -1px) rotate(-0.5deg)
+        transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     76% {
-        transform: translate(-1px, 0px) rotate(-0.5deg)
+        transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     78% {
         transform: translate(0px, 0px) rotate(-0.5deg)
     }
     80% {
-        transform: translate(0px, -1px) rotate(-0.5deg)
+        transform: translate(0px, -2px) rotate(-0.5deg)
     }
     82% {
-        transform: translate(-1px, 0px) rotate(-0.5deg)
+        transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     84% {
-        transform: translate(-1px, -1px) rotate(-0.5deg)
+        transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     86% {
-        transform: translate(0px, -1px) rotate(-0.5deg)
+        transform: translate(0px, -2px) rotate(-0.5deg)
     }
     88% {
         transform: translate(0px, 0px) rotate(-0.5deg)
     }
     90% {
-        transform: translate(-1px, -1px) rotate(-0.5deg)
+        transform: translate(-2px, -2px) rotate(-0.5deg)
     }
     92% {
-        transform: translate(-1px, 0px) rotate(-0.5deg)
+        transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     94% {
-        transform: translate(-1px, 0px) rotate(-0.5deg)
+        transform: translate(-2px, 0px) rotate(-0.5deg)
     }
     96% {
-        transform: translate(0px, -1px) rotate(-0.5deg)
+        transform: translate(0px, -2px) rotate(-0.5deg)
     }
     98% {
-        transform: translate(0px, -1px) rotate(-0.5deg)
+        transform: translate(0px, -2px) rotate(-0.5deg)
     }
 }

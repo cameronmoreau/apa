@@ -10,43 +10,49 @@ $("document").ready(function() {
     $("#accent-1").fadeIn(5000);
 
 
-    fadeInAnimation("#intro-text", 3000, '50%');
-    fadeInAnimation("#part1", 3000, '50%');
-    fadeInAnimation("#part2", 3000, '50%');
-    fadeInAnimation("#part3", 3000, '50%');
-    fadeInAnimation("#part4", 3000, '50%');
-    fadeInAnimation("#struck", 4000, '50%');
-    fadeInAnimation("#prove", 4000, '40%');
-    fadeInAnimation("#text-box", 3000, '50%');
-    fadeInAnimation(".slash.left", 3000, '50%');
-    fadeInAnimation(".slash.right", 5000, '50%');
-    fadeInAnimation(".grendel", 3000, '50%');
+    fadeInAnimation("#intro-text", 3000, 300);
+    fadeInAnimation("#part1", 3000, 300);
+    fadeInAnimation("#part2", 3000, 300);
+    fadeInAnimation("#part3", 3000, 300);
+    fadeInAnimation("#part4", 3000, 300);
+    fadeInAnimation("#struck", 4000, 400);
+    fadeInAnimation("#prove", 4000, 400);
+    fadeInAnimation("#text-box", 3000, 100);
+    fadeInAnimation(".slash.left", 3000, 400);
+    fadeInAnimation(".slash.right", 5000, 400);
+    fadeInAnimation(".grendel", 3000, 300);
+
 
     function fadeInAnimation(selector, length, off) {
-        $(selector).waypoint(function() {
-            $(selector).fadeTo(length, 1);
-        }, {
+        var waypoint = new Waypoint({
+            element: document.querySelector(selector),
+            handler: function(direction) {
+                $(selector).fadeTo(length, 1);
+            },
             offset: off
-        });
+        })
+
     };
 
 
-    addClassAnimation(".change", "rToG", '30%');
+    addClassAnimation(".change", "rToG", 500);
     $(".change").css("opacity", "1");
-    addClassAnimation("#warrior", "animated fadeInRight", '40%');
-    addClassAnimation("#warrior2", "animated fadeInRight", '40%');
-    addClassAnimation("#monster", "animated fadeInLeft", '40%');
-    addClassAnimation("#scene-9", "animated fadeIn withBack", '30%');
-    addClassAnimation(".beowulf", "animated fadeInRight", '30%');
+    addClassAnimation("#warrior", "animated fadeInRight", 300);
+    addClassAnimation("#warrior2", "animated fadeInRight", 300);
+    addClassAnimation("#monster", "animated fadeInLeft", 300);
+    addClassAnimation("#scene-9", "animated fadeIn withBack", '90%');
+    addClassAnimation(".beowulf", "animated fadeInRight", 300);
 
 
     function addClassAnimation(selector, className, off) {
         $(selector).css("opacity", "0");
-        $(selector).waypoint(function() {
-            $(selector).addClass(className);
-        }, {
+        var waypoint = new Waypoint({
+            element: document.querySelector(selector),
+            handler: function(direction) {
+                $(selector).addClass(className);
+            },
             offset: off
-        });
+        })
     };
 
     // $('#yourElement').one('webkitAnimationEnd mozAnimationEnd 
@@ -57,7 +63,7 @@ $("document").ready(function() {
         setTimeout(fall, 2000);
         this.disable();
     }, {
-        offset: '50%'
+        offset: 650
     });
 
     function fall() {
@@ -69,7 +75,8 @@ $("document").ready(function() {
 
             $(".fall").css({
                 '-webkit-transform': 'translate(0px,' + ratio + 'px)',
-                'transform': 'translate(0px,' + ratio + 'px)'
+                'transform': 'translate(0px,' + ratio + 'px)',
+                '-moz-transform': 'translate(0px,' + ratio + 'px)'
             });
 
             if (y > 10) {
