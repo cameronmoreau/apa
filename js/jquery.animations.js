@@ -30,7 +30,7 @@ $("document").ready(function() {
                 $(selector).fadeTo(length, 1);
             },
             offset: off
-        })
+        });
 
     };
 
@@ -41,8 +41,7 @@ $("document").ready(function() {
     addClassAnimation("#warrior2", "animated fadeInRight", 300);
     addClassAnimation("#monster", "animated fadeInLeft", 300);
     addClassAnimation("#scene-9", "animated fadeIn withBack", '90%');
-    addClassAnimation(".beowulf", "animated fadeInRight", 300);
-
+    addClassAnimation(".beowulf", "animated fadeInRight", 200);
 
     function addClassAnimation(selector, className, off) {
         $(selector).css("opacity", "0");
@@ -52,7 +51,7 @@ $("document").ready(function() {
                 $(selector).addClass(className);
             },
             offset: off
-        })
+        });
     };
 
     // $('#yourElement').one('webkitAnimationEnd mozAnimationEnd 

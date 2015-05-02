@@ -22,8 +22,8 @@ img {
 html,
 body {
     font-family: 'Open Sans';
-    min-width: 1300px;
-    max-width: 1600px;
+    min-width: 1355px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -48,288 +48,67 @@ a:hover {
     text-decoration: none;
 }
 
-section > img.eye {
+.mouth {
     position: absolute;
-    top: 860px;
+    top: 920px;
     left: 490px;
-    -webkit-animation-name: eyeOne;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-play-state: running;
-    -moz-animation-name: eyeOne;
-    -moz-animation-duration: 3s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-play-state: running;
-    animation-name: eyeOne;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-}
-
-@-webkit-keyframes eyeOne {
-    10% {
-        -webkit-transform: translate(20px, 0px)
-    }
-    20% {
-        -webkit-transform: translate(20px, 0px)
-    }
-    30% {
-        -webkit-transform: translate(20px, 0px)
-    }
-    40% {
-        -webkit-transform: translate(20px, 0px)
-    }
-    50% {
-        -webkit-transform: translate(20px, 0px)
-    }
-    60% {
-        -webkit-transform: translate(0px, 0px)
-    }
-    70% {
-        -webkit-transform: translate(0px, 0px)
-    }
-    80% {
-        -webkit-transform: translate(0px, 0px)
-    }
-    90% {
-        -webkit-transform: translate(0px, 0px)
-    }
-    100% {
-        -webkit-transform: translate(0px, 0px)
-    }
-}
-
-@-moz-keyframes eyeOne {
-    10% {
-        -moz-transform: translate(20px, 0px)
-    }
-    20% {
-        -moz-transform: translate(20px, 0px)
-    }
-    30% {
-        -moz-transform: translate(20px, 0px)
-    }
-    40% {
-        -moz-transform: translate(20px, 0px)
-    }
-    50% {
-        -moz-transform: translate(20px, 0px)
-    }
-    60% {
-        -moz-transform: translate(0px, 0px)
-    }
-    70% {
-        -moz-transform: translate(0px, 0px)
-    }
-    80% {
-        -moz-transform: translate(0px, 0px)
-    }
-    90% {
-        -moz-transform: translate(0px, 0px)
-    }
-    100% {
-        -moz-transform: translate(0px, 0px)
-    }
-}
-
-@keyframes eyeOne {
-    10% {
-        transform: translate(20px, 0px)
-    }
-    20% {
-        transform: translate(20px, 0px)
-    }
-    30% {
-        transform: translate(20px, 0px)
-    }
-    40% {
-        transform: translate(20px, 0px)
-    }
-    50% {
-        transform: translate(20px, 0px)
-    }
-    60% {
-        transform: translate(0px, 0px)
-    }
-    70% {
-        transform: translate(0px, 0px)
-    }
-    80% {
-        transform: translate(0px, 0px)
-    }
-    90% {
-        transform: translate(0px, 0px)
-    }
-    100% {
-        transform: translate(0px, 0px)
-    }
-}
-
-section > img.eye2 {
-    position: absolute;
-    top: 860px;
-    left: 600px;
-    -webkit-animation-name: eyeTwo;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-play-state: running;
-    -moz-animation-name: eyeTwo;
-    -moz-animation-duration: 3s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-play-state: running;
-    animation-name: eyeTwo;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-}
-
-@-webkit-keyframes eyeTwo {
-    10% {
-        -webkit-transform: translate(30px, 0px)
-    }
-    20% {
-        -webkit-transform: translate(30px, 0px)
-    }
-    30% {
-        -webkit-transform: translate(30px, 0px)
-    }
-    40% {
-        -webkit-transform: translate(30px, 0px)
-    }
-    50% {
-        -webkit-transform: translate(30px, 0px)
-    }
-    60% {
-        -webkit-transform: translate(0px, 0px)
-    }
-    70% {
-        -webkit-transform: translate(0px, 0px)
-    }
-    80% {
-        -webkit-transform: translate(0px, 0px)
-    }
-    90% {
-        -webkit-transform: translate(0px, 0px)
-    }
-    100% {
-        -webkit-transform: translate(0px, 0px)
-    }
-}
-
-@-moz-keyframes eyeTwo {
-    10% {
-        -moz-transform: translate(30px, 0px)
-    }
-    20% {
-        -moz-transform: translate(30px, 0px)
-    }
-    30% {
-        -moz-transform: translate(30px, 0px)
-    }
-    40% {
-        -moz-transform: translate(30px, 0px)
-    }
-    50% {
-        -moz-transform: translate(30px, 0px)
-    }
-    60% {
-        -moz-transform: translate(0px, 0px)
-    }
-    70% {
-        -moz-transform: translate(0px, 0px)
-    }
-    80% {
-        -moz-transform: translate(0px, 0px)
-    }
-    90% {
-        -moz-transform: translate(0px, 0px)
-    }
-    100% {
-        -moz-transform: translate(0px, 0px)
-    }
-}
-
-@keyframes eyeTwo {
-    10% {
-        transform: translate(30px, 0px)
-    }
-    20% {
-        transform: translate(30px, 0px)
-    }
-    30% {
-        transform: translate(30px, 0px)
-    }
-    40% {
-        transform: translate(30px, 0px)
-    }
-    50% {
-        transform: translate(30px, 0px)
-    }
-    60% {
-        transform: translate(0px, 0px)
-    }
-    70% {
-        transform: translate(0px, 0px)
-    }
-    80% {
-        transform: translate(0px, 0px)
-    }
-    90% {
-        transform: translate(0px, 0px)
-    }
-    100% {
-        transform: translate(0px, 0px)
-    }
+    width: 10%;
 }
 
 .teeth {
     position: absolute;
-    top: 920px;
-    left: 490px;
-    width: 12%;
+    top: 930px;
+    left: 483px;
+    width: 11%;
+    -webkit-animation-name: teethAnim;
+    -moz-animation-name: teethAnim;
+    animation-name: teethAnim;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-name: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes teethAnim {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, 10px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@-webkit-keyframes teethAnim {
+    0% {
+        -webkit-transform: translate(0px, 0px);
+    }
+    50% {
+        -webkit-transform: translate(0px, 10px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+    }
+}
+
+@-moz-keyframes teethAnim {
+    0% {
+        -moz-transform: translate(0px, 0px);
+    }
+    50% {
+        -moz-transform: translate(0px, 10px);
+    }
+    100% {
+        -moz-transform: translate(0px, 0px);
+    }
 }
 
 .tree {
     padding-bottom: 200px;
-}
-
-.rToG {
-    -webkit-animation-name: redToGreen;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-name: redToGreen;
-    -moz-animation-duration: 3s;
-    -moz-animation-fill-mode: forwards;
-    animation-name: redToGreen;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes redToGreen {
-    from {
-        color: rgb(139, 197, 63);
-    }
-    to {
-        color: red;
-    }
-}
-
-@-moz-keyframes redToGreen {
-    from {
-        color: rgb(139, 197, 63);
-    }
-    to {
-        color: red;
-    }
-}
-
-@keyframes redToGreen {
-    from {
-        color: rgb(139, 197, 63);
-    }
-    to {
-        color: red;
-    }
 }
 
 .break-word {
@@ -338,8 +117,9 @@ section > img.eye2 {
 
 .arrow-intro {
     background: url('../img/arrows.png') no-repeat center;
+    background-size: 55%;
     font-family: 'Ostrich Sans';
-    font-size: 35px;
+    font-size: 45px;
 }
 
 .heading {
@@ -465,11 +245,6 @@ section > img.eye2 {
     height: 650px;
 }
 
-#scene-4 {
-    background: url('../img/grendel-text.png') no-repeat;
-    background-size: 100% 100%;
-}
-
 #scene-5 {
     background: url('../img/bottom-bg.png') no-repeat;
     background-size: 100% 100%;
@@ -500,7 +275,7 @@ section > img.eye2 {
 
 #scene-9.withBack {
     background: url('../img/scene-9-back.png') no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 90%;
     height: 1000px;
 }
 
@@ -528,10 +303,58 @@ section > img.eye2 {
     background-size: 100%;
 }
 
+#grendel-head {
+    -webkit-animation-name: headMove;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: headMove;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    animation-name: headMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes headMove {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, 30px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@-webkit-keyframes headMove {
+    0% {
+        -webkit-transform: translate(0px, 0px);
+    }
+    50% {
+        -webkit-transform: translate(0px, 30px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+    }
+}
+
+@-moz-keyframes headMove {
+    0% {
+        -moz-transform: translate(0px, 0px);
+    }
+    50% {
+        -moz-transform: translate(0px, 30px);
+    }
+    100% {
+        -moz-transform: translate(0px, 0px);
+    }
+}
+
 .bread1 {
     position: absolute;
-    top: 1790px;
-    left: 40%;
+    top: 1800px;
+    left: 42%;
     z-index: 1;
 }
 
@@ -546,6 +369,13 @@ section > img.eye2 {
     position: absolute;
     top: 1800px;
     left: 53%;
+    z-index: 1;
+}
+
+.ham2 {
+    position: absolute;
+    top: 1780px;
+    left: 37%;
     z-index: 1;
 }
 
@@ -567,6 +397,279 @@ section > img.eye2 {
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+.rToG {
+    -webkit-animation-name: redToGreen;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: redToGreen;
+    -moz-animation-duration: 3s;
+    -moz-animation-fill-mode: forwards;
+    animation-name: redToGreen;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes redToGreen {
+    from {
+        color: rgb(139, 197, 63);
+    }
+    to {
+        color: red;
+    }
+}
+
+@-moz-keyframes redToGreen {
+    from {
+        color: rgb(139, 197, 63);
+    }
+    to {
+        color: red;
+    }
+}
+
+@keyframes redToGreen {
+    from {
+        color: rgb(139, 197, 63);
+    }
+    to {
+        color: red;
+    }
+}
+
+section > img.eye {
+    position: absolute;
+    top: 860px;
+    left: 483px;
+    -webkit-animation-name: eyeOne;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    -moz-animation-name: eyeOne;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-play-state: running;
+    animation-name: eyeOne;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@-webkit-keyframes eyeOne {
+    10% {
+        -webkit-transform: translate(20px, 0px)
+    }
+    20% {
+        -webkit-transform: translate(20px, 0px)
+    }
+    30% {
+        -webkit-transform: translate(20px, 0px)
+    }
+    40% {
+        -webkit-transform: translate(20px, 0px)
+    }
+    50% {
+        -webkit-transform: translate(20px, 0px)
+    }
+    60% {
+        -webkit-transform: translate(0px, 0px)
+    }
+    70% {
+        -webkit-transform: translate(0px, 0px)
+    }
+    80% {
+        -webkit-transform: translate(0px, 0px)
+    }
+    90% {
+        -webkit-transform: translate(0px, 0px)
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px)
+    }
+}
+
+@-moz-keyframes eyeOne {
+    10% {
+        -moz-transform: translate(20px, 0px)
+    }
+    20% {
+        -moz-transform: translate(20px, 0px)
+    }
+    30% {
+        -moz-transform: translate(20px, 0px)
+    }
+    40% {
+        -moz-transform: translate(20px, 0px)
+    }
+    50% {
+        -moz-transform: translate(20px, 0px)
+    }
+    60% {
+        -moz-transform: translate(0px, 0px)
+    }
+    70% {
+        -moz-transform: translate(0px, 0px)
+    }
+    80% {
+        -moz-transform: translate(0px, 0px)
+    }
+    90% {
+        -moz-transform: translate(0px, 0px)
+    }
+    100% {
+        -moz-transform: translate(0px, 0px)
+    }
+}
+
+@keyframes eyeOne {
+    10% {
+        transform: translate(20px, 0px)
+    }
+    20% {
+        transform: translate(20px, 0px)
+    }
+    30% {
+        transform: translate(20px, 0px)
+    }
+    40% {
+        transform: translate(20px, 0px)
+    }
+    50% {
+        transform: translate(20px, 0px)
+    }
+    60% {
+        transform: translate(0px, 0px)
+    }
+    70% {
+        transform: translate(0px, 0px)
+    }
+    80% {
+        transform: translate(0px, 0px)
+    }
+    90% {
+        transform: translate(0px, 0px)
+    }
+    100% {
+        transform: translate(0px, 0px)
+    }
+}
+
+section > img.eye2 {
+    position: absolute;
+    top: 860px;
+    left: 593px;
+    -webkit-animation-name: eyeTwo;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    -moz-animation-name: eyeTwo;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-play-state: running;
+    animation-name: eyeTwo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@-webkit-keyframes eyeTwo {
+    10% {
+        -webkit-transform: translate(30px, 0px)
+    }
+    20% {
+        -webkit-transform: translate(30px, 0px)
+    }
+    30% {
+        -webkit-transform: translate(30px, 0px)
+    }
+    40% {
+        -webkit-transform: translate(30px, 0px)
+    }
+    50% {
+        -webkit-transform: translate(30px, 0px)
+    }
+    60% {
+        -webkit-transform: translate(0px, 0px)
+    }
+    70% {
+        -webkit-transform: translate(0px, 0px)
+    }
+    80% {
+        -webkit-transform: translate(0px, 0px)
+    }
+    90% {
+        -webkit-transform: translate(0px, 0px)
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px)
+    }
+}
+
+@-moz-keyframes eyeTwo {
+    10% {
+        -moz-transform: translate(30px, 0px)
+    }
+    20% {
+        -moz-transform: translate(30px, 0px)
+    }
+    30% {
+        -moz-transform: translate(30px, 0px)
+    }
+    40% {
+        -moz-transform: translate(30px, 0px)
+    }
+    50% {
+        -moz-transform: translate(30px, 0px)
+    }
+    60% {
+        -moz-transform: translate(0px, 0px)
+    }
+    70% {
+        -moz-transform: translate(0px, 0px)
+    }
+    80% {
+        -moz-transform: translate(0px, 0px)
+    }
+    90% {
+        -moz-transform: translate(0px, 0px)
+    }
+    100% {
+        -moz-transform: translate(0px, 0px)
+    }
+}
+
+@keyframes eyeTwo {
+    10% {
+        transform: translate(30px, 0px)
+    }
+    20% {
+        transform: translate(30px, 0px)
+    }
+    30% {
+        transform: translate(30px, 0px)
+    }
+    40% {
+        transform: translate(30px, 0px)
+    }
+    50% {
+        transform: translate(30px, 0px)
+    }
+    60% {
+        transform: translate(0px, 0px)
+    }
+    70% {
+        transform: translate(0px, 0px)
+    }
+    80% {
+        transform: translate(0px, 0px)
+    }
+    90% {
+        transform: translate(0px, 0px)
+    }
+    100% {
+        transform: translate(0px, 0px)
+    }
 }
 
 .vibrate {
