@@ -6,7 +6,7 @@ $("document").ready(function() {
     //$(".heading").css("opacity", "0");
     $(".fadeIn").css("opacity", "0");
 
-    $("#apa-img").fadeIn(3000);
+    $("#apa-img").fadeIn(8000);
     $("#accent-1").fadeIn(5000);
 
 
@@ -21,6 +21,7 @@ $("document").ready(function() {
     fadeInAnimation(".slash.left", 3000, 400);
     fadeInAnimation(".slash.right", 5000, 400);
     fadeInAnimation(".grendel", 3000, 300);
+    fadeInAnimation(".monster", 4000, 300);
 
 
     function fadeInAnimation(selector, length, off) {
@@ -34,12 +35,10 @@ $("document").ready(function() {
 
     };
 
-
     addClassAnimation(".change", "rToG", 500);
     $(".change").css("opacity", "1");
     addClassAnimation("#warrior", "animated fadeInRight", 300);
     addClassAnimation("#warrior2", "animated fadeInRight", 300);
-    addClassAnimation("#monster", "animated fadeInLeft", 300);
     addClassAnimation("#scene-9", "animated fadeIn withBack", '90%');
     addClassAnimation(".beowulf", "animated fadeInRight", 200);
 
@@ -56,6 +55,13 @@ $("document").ready(function() {
 
     // $('#yourElement').one('webkitAnimationEnd mozAnimationEnd 
     //     MSAnimationEnd oanimationend animationend ', fall()); //TODO: add the grendel movement animations
+
+
+    $("#arm").css({
+        '-webkit-transform': 'rotate(' + -25 + 'deg)',
+        'transform': 'rotate(' + -25 + 'deg)',
+        '-moz-transform': 'rotate(' + -25 + 'deg)'
+    });
 
     /* Falling animation */
     $(".fall").waypoint(function() {

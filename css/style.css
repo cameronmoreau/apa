@@ -22,8 +22,8 @@ img {
 html,
 body {
     font-family: 'Open Sans';
-    min-width: 1355px;
-    max-width: 1400px;
+    min-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -51,60 +51,13 @@ a:hover {
 .mouth {
     position: absolute;
     top: 920px;
-    left: 490px;
+    left: 495px;
     width: 10%;
+    min-width: 140px;
 }
 
-.teeth {
-    position: absolute;
-    top: 930px;
-    left: 483px;
-    width: 11%;
-    -webkit-animation-name: teethAnim;
-    -moz-animation-name: teethAnim;
-    animation-name: teethAnim;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    animation-name: 2s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-}
-
-@keyframes teethAnim {
-    0% {
-        transform: translate(0px, 0px);
-    }
-    50% {
-        transform: translate(0px, 10px);
-    }
-    100% {
-        transform: translate(0px, 0px);
-    }
-}
-
-@-webkit-keyframes teethAnim {
-    0% {
-        -webkit-transform: translate(0px, 0px);
-    }
-    50% {
-        -webkit-transform: translate(0px, 10px);
-    }
-    100% {
-        -webkit-transform: translate(0px, 0px);
-    }
-}
-
-@-moz-keyframes teethAnim {
-    0% {
-        -moz-transform: translate(0px, 0px);
-    }
-    50% {
-        -moz-transform: translate(0px, 10px);
-    }
-    100% {
-        -moz-transform: translate(0px, 0px);
-    }
+.red {
+    color: red;
 }
 
 .tree {
@@ -221,6 +174,22 @@ a:hover {
     width: 100%;
 }
 
+#monster-head {
+    -webkit-animation-name: headMove;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: headMove;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    animation-name: headMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 34%;
+    left: 16.5%;
+    z-index: 2;
+}
+
 #monster {
     -webkit-animation-duration: 3s;
     -moz-animation-duration: 3s;
@@ -247,7 +216,7 @@ a:hover {
 
 #scene-5 {
     background: url('../img/bottom-bg.png') no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     height: 850px;
 }
 
@@ -303,6 +272,258 @@ a:hover {
     background-size: 100%;
 }
 
+.bread1 {
+    position: absolute;
+    top: 1800px;
+    left: 42%;
+    z-index: 1;
+}
+
+.bread2 {
+    position: absolute;
+    top: 1808px;
+    left: 59%;
+    z-index: 1;
+}
+
+.pitcher {
+    position: absolute;
+    top: 1800px;
+    left: 53%;
+    z-index: 1;
+}
+
+.ham2 {
+    position: absolute;
+    top: 1780px;
+    left: 37%;
+    z-index: 1;
+}
+
+.ham {
+    position: absolute;
+    top: 1785px;
+    left: 47%;
+    z-index: 1;
+}
+
+.wings {
+    position: absolute;
+    z-index: -1;
+    width: 300px;
+}
+
+.wing-left {
+    -webkit-animation-name: LeftWingMove;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: LeftWingMove;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    animation-name: LeftWingMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    top: 450px;
+    left: 350px;
+    width: 500px;
+    height: 450px;
+    padding-bottom: 200px;
+    padding-right: 200px
+}
+
+.wing-right {
+    -webkit-animation-name: wingMove;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: wingMove;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    animation-name: wingMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    top: 450px;
+    left: 600px;
+    width: 500px;
+    height: 450px;
+    padding-bottom: 200px;
+    padding-left: 200px
+}
+
+.wing2-left {
+    -webkit-animation-name: wing2Move;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: wing2Move;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    animation-name: wing2Move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    top: 500px;
+    left: 350px;
+    z-index: -2;
+}
+
+.wing2-right {
+    -webkit-animation-name: wing2Move;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: wing2Move;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    animation-name: wing2Move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    top: 500px;
+    left: 800px;
+    z-index: -2;
+}
+
+@keyframes LeftWingMove {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes LeftWingMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(30deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes LeftWingMove {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes wingMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(-30deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-moz-keyframes wingMove {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    50% {
+        -moz-transform: rotate(-30deg);
+    }
+    100% {
+        -moz-transform: rotate(0deg);
+    }
+}
+
+@keyframes LeftWing2Move {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, 30px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@-webkit-keyframes LeftWing2Move {
+    0% {
+        -webkit-transform: translate(0px, 0px);
+    }
+    50% {
+        -webkit-transform: translate(0px, 30px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+    }
+}
+
+@-moz-keyframes LeftWing2Move {
+    0% {
+        -moz-transform: translate(0px, 0px);
+    }
+    50% {
+        -moz-transform: translate(0px, 30px);
+    }
+    100% {
+        -moz-transform: translate(0px, 0px);
+    }
+}
+
+@keyframes wing2Move {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, 30px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@-webkit-keyframes wing2Move {
+    0% {
+        -webkit-transform: translate(0px, 0px);
+    }
+    50% {
+        -webkit-transform: translate(0px, 30px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+    }
+}
+
+@-moz-keyframes wing2Move {
+    0% {
+        -moz-transform: translate(0px, 0px);
+    }
+    50% {
+        -moz-transform: translate(0px, 30px);
+    }
+    100% {
+        -moz-transform: translate(0px, 0px);
+    }
+}
+
+.cup {
+    position: absolute;
+    top: 1775px;
+    left: 55%;
+    z-index: 1;
+}
+
+.snow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 #grendel-head {
     -webkit-animation-name: headMove;
     -webkit-animation-duration: 3s;
@@ -351,52 +572,109 @@ a:hover {
     }
 }
 
-.bread1 {
+.windows {
     position: absolute;
-    top: 1800px;
-    left: 42%;
-    z-index: 1;
+    top: 120px;
+    left: 50%;
+    margin-left: -60px;
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blink;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
-.bread2 {
-    position: absolute;
-    top: 1808px;
-    left: 59%;
-    z-index: 1;
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.pitcher {
-    position: absolute;
-    top: 1800px;
-    left: 53%;
-    z-index: 1;
+@-webkit-keyframes blink {
+    0% {
+        -webkit-opacity: 1;
+    }
+    50% {
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-opacity: 1;
+    }
 }
 
-.ham2 {
-    position: absolute;
-    top: 1780px;
-    left: 37%;
-    z-index: 1;
+@-moz-keyframes blink {
+    0% {
+        -moz-opacity: 1;
+    }
+    50% {
+        -moz-opacity: 0;
+    }
+    100% {
+        -moz-opacity: 1;
+    }
 }
 
-.ham {
+.teeth {
     position: absolute;
-    top: 1785px;
-    left: 47%;
-    z-index: 1;
+    top: 938px;
+    left: 490px;
+    width: 11%;
+    min-width: 150px;
+    -webkit-animation-name: teethAnim;
+    -moz-animation-name: teethAnim;
+    animation-name: teethAnim;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-name: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
-.cup {
-    position: absolute;
-    top: 1775px;
-    left: 55%;
-    z-index: 1;
+@keyframes teethAnim {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, 10px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
 }
 
-.snow {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+@-webkit-keyframes teethAnim {
+    0% {
+        -webkit-transform: translate(0px, 0px);
+    }
+    50% {
+        -webkit-transform: translate(0px, 10px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+    }
+}
+
+@-moz-keyframes teethAnim {
+    0% {
+        -moz-transform: translate(0px, 0px);
+    }
+    50% {
+        -moz-transform: translate(0px, 10px);
+    }
+    100% {
+        -moz-transform: translate(0px, 0px);
+    }
 }
 
 .rToG {
@@ -441,7 +719,7 @@ a:hover {
 section > img.eye {
     position: absolute;
     top: 860px;
-    left: 483px;
+    left: 490px;
     -webkit-animation-name: eyeOne;
     -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
