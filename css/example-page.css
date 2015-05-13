@@ -83,28 +83,54 @@ body {
     margin-left: -600px;
 }
 
+.number {
+    height: 150px;
+    width: 150px;
+    background-size: 150px 150px;
+}
+
 .one {
+    background: url('../img/one.png') no-repeat;
     position: absolute;
     top: 1375px;
     left: 20%;
 }
 
 .two {
+    background: url('../img/two.png') no-repeat;
     position: absolute;
     top: 1760px;
     left: 65%;
 }
 
 .three {
+    background: url('../img/three.png') no-repeat;
     position: absolute;
     top: 2240px;
     left: 31%;
 }
 
 .four {
+    background: url('../img/four.png') no-repeat;
     position: absolute;
     top: 2640px;
     left: 55%;
+}
+
+.one:hover {
+    background: url('../img/hover-one.png') no-repeat;
+}
+
+.two:hover {
+    background: url('../img/hover-two.png') no-repeat;
+}
+
+.three:hover {
+    background: url('../img/hover-three.png') no-repeat;
+}
+
+.four:hover {
+    background: url('../img/hover-four.png') no-repeat;
 }
 
 .img-background {
@@ -207,4 +233,8 @@ body {
     position: absolute;
     top: 2390px;
     left: 65%;
+}
+
+#info {
+    margin-top: 150px;
 }

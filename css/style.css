@@ -54,6 +54,7 @@ a:hover {
     left: 495px;
     width: 10%;
     min-width: 140px;
+    max-width: 140px;
 }
 
 .red {
@@ -174,6 +175,65 @@ a:hover {
     width: 100%;
 }
 
+.helmet {
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes helmet {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    25% {
+        -moz-transform: rotate(30deg);
+    }
+    50% {
+        -moz-transform: rotate(0deg);
+    }
+    75% {
+        -moz-transform: rotate(-30deg);
+    }
+    100% {
+        -moz-transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes helmet {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(30deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    75% {
+        -webkit-transform: rotate(-30deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes helmet {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 #monster-head {
     -webkit-animation-name: headMove;
     -webkit-animation-duration: 3s;
@@ -222,16 +282,16 @@ a:hover {
 
 #scene-6 {
     background: url('../img/wall.png') no-repeat;
-    background-size: 100%;
+    background-size: 100% 500px;
     height: 500px;
-    margin: 5% 0 0 0;
+    margin: 50px 0 0 0;
 }
 
 #scene-7 {
     margin: 0% 0 60% 0;
     background: url('../img/scene-7-top.png') no-repeat center;
     background-size: 100% 100%;
-    height: 1500px
+    height: 1500px;
 }
 
 #scene-8 {
@@ -240,7 +300,8 @@ a:hover {
     height: 1500px;
 }
 
-#scene-9 {}
+#scene-9 {
+}
 
 #scene-9.withBack {
     background: url('../img/scene-9-back.png') no-repeat;
@@ -259,6 +320,7 @@ a:hover {
 #intro {
     background: url('../img/intro-bg.png') no-repeat center;
     background-size: 100% 100%;
+    width: 100%;
     height: 1300px;
 }
 

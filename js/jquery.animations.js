@@ -4,24 +4,24 @@ $("document").ready(function() {
     $("#accent-1").hide();
     //$("#intro-text").css("opacity", "0");
     //$(".heading").css("opacity", "0");
-    $(".fadeIn").css("opacity", "0");
+    $(".transparent").css("opacity", "0");
 
     $("#apa-img").fadeIn(8000);
     $("#accent-1").fadeIn(5000);
 
 
-    fadeInAnimation("#intro-text", 3000, 300);
-    fadeInAnimation("#part1", 3000, 300);
-    fadeInAnimation("#part2", 3000, 300);
-    fadeInAnimation("#part3", 3000, 300);
-    fadeInAnimation("#part4", 3000, 300);
-    fadeInAnimation("#struck", 4000, 400);
-    fadeInAnimation("#prove", 4000, 400);
-    fadeInAnimation("#text-box", 3000, 100);
-    fadeInAnimation(".slash.left", 3000, 400);
-    fadeInAnimation(".slash.right", 5000, 400);
-    fadeInAnimation(".grendel", 3000, 300);
-    fadeInAnimation(".monster", 4000, 300);
+    fadeInAnimation("#intro-text", 3000, 50);
+    fadeInAnimation("#part1", 3000, 50);
+    fadeInAnimation("#part2", 3000, 50);
+    fadeInAnimation("#part3", 3000, 50);
+    fadeInAnimation("#part4", 3000, 50);
+    fadeInAnimation("#struck", 4000, 50);
+    fadeInAnimation("#prove", 4000, 50);
+    fadeInAnimation("#text-box", 3000, 50);
+    fadeInAnimation(".slash.left", 3000, 50);
+    fadeInAnimation(".slash.right", 5000, 50);
+    fadeInAnimation(".grendel", 3000, 50);
+    fadeInAnimation(".monster", 4000, 50);
 
 
     function fadeInAnimation(selector, length, off) {
@@ -35,15 +35,15 @@ $("document").ready(function() {
 
     };
 
-    addClassAnimation(".change", "rToG", 500);
+    addClassAnimation(".change", "rToG", 100);
     $(".change").css("opacity", "1");
-    addClassAnimation("#warrior", "animated fadeInRight", 300);
-    addClassAnimation("#warrior2", "animated fadeInRight", 300);
-    addClassAnimation("#scene-9", "animated fadeIn withBack", '90%');
-    addClassAnimation(".beowulf", "animated fadeInRight", 200);
+    addClassAnimation("#warrior", "animated fadeInRight", 50);
+    addClassAnimation("#warrior2", "animated fadeInRight", 50);
+    addClassAnimation("#scene-9", "animated fadeIn withBack", 100);
+    addClassAnimation(".beowulf", "animated fadeInRight", 50);
+    addClassAnimation(".helmet", "animated swing", 200);
 
     function addClassAnimation(selector, className, off) {
-        $(selector).css("opacity", "0");
         var waypoint = new Waypoint({
             element: document.querySelector(selector),
             handler: function(direction) {
