@@ -164,7 +164,7 @@ body {
 }
 
 .text-medium {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .text-large {
@@ -220,7 +220,7 @@ body {
 #title {
     position: absolute;
     top: 1515px;
-    left: 50%;
+    left: 40%;
 }
 
 #properly {
@@ -232,9 +232,18 @@ body {
 #authors {
     position: absolute;
     top: 2390px;
-    left: 65%;
+    left: 55%;
+}
+#learnref {
+    position: absolute;
+    top: 2900px;
+    left: 15%;
 }
 
 #info {
     margin-top: 150px;
 }
+.tab {
+    margin-left: 5px;
+}
+
